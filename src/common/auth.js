@@ -18,6 +18,7 @@ const createToken = async (payload) => {
   return token;
 };
 
+
 const decodeToken = async (token) => {
   const payload = await jwt.decode(token);
   return payload;

@@ -1,4 +1,4 @@
-import mongoose from "./index.js";
+import mongoose from "mongoose";
 
 const validateEmail = (e) => {
   var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;

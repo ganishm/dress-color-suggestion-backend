@@ -4,7 +4,7 @@ import Auth from "../common/auth.js";
 const router = express.Router();
 
 router.get("/login/:id", Auth.validate, UserController.getUserById);
-router.post("/signup", UserController.create);
+router.post("/login", UserController.create);
 router.put("/:id", UserController.editUserById);
 router.put("/login/:id", Auth.validate, UserController.addUserdetailsById);
 router.put("/delete/:id", UserController.deleteUserById);
